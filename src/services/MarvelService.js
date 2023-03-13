@@ -23,7 +23,7 @@ class MarvelService {
 
     _transformCharacter = (char) => {
 
-        const shortDescr = char.description.length > 150 ? (char.description.slice(0, 200) + '...') : char.description;
+        let shortDescr = char.description.length > 150 ? (char.description.slice(0, 200) + '...') : char.description;
 
         return {
             name: char.name,
